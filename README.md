@@ -1,6 +1,11 @@
 SushifyJS
 =========
 
+Online Compiler
+---------------
+
+https://serene-scrubland-2735.herokuapp.com/
+
 Install
 -------
 
