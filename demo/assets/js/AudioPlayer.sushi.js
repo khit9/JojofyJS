@@ -1,0 +1,1 @@
+window.licker=window.licker||{},function(鮨){function 鮭(鮨){this.audioElm=鮨.get(0),this.$elm=鮨}鮭.prototype.play=function(){return this.audioElm.play(),this},鮭.prototype.pause=function(){return this.audioElm.pause(),this},鮭.prototype.stop=function(){return this.audioElm.pause(),this.audioElm.currentTime=0,this},鮨.AudioPlayer=鮭}(window.licker);
