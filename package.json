@@ -1,22 +1,22 @@
 {
-  "name": "uglify-js",
-  "description": "JavaScript parser, mangler/compressor and beautifier toolkit",
-  "homepage": "http://lisperator.net/uglifyjs",
-  "author": "Mihai Bazon <mihai.bazon@gmail.com> (http://lisperator.net/)",
+  "name": "sushify-js",
+  "description": "JavaScript parser, sushi-mangler/compressor and beautifier toolkit",
+  "homepage": "http://butchi.github.io/SushifyJS/",
+  "author": "IWABUCHI Yu(u)ki <k38647@gmail.com> (http://butchi.jp/)",
   "license": "BSD-2-Clause",
-  "version": "2.6.1",
+  "version": "0.1.0",
   "engines": {
     "node": ">=0.8.0"
   },
   "maintainers": [
-    "Mihai Bazon <mihai.bazon@gmail.com> (http://lisperator.net/)"
+    "IWABUCHI Yu(u)ki <k38647@gmail.com> (http://butchi.jp/)"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mishoo/UglifyJS2.git"
+    "url": "https://github.com/butchi/SushifyJS.git"
   },
   "bugs": {
-    "url": "https://github.com/mishoo/UglifyJS2/issues"
+    "url": "https://github.com/butchi/SushifyJS/issues"
   },
   "main": "tools/node.js",
   "bin": {
