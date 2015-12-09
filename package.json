@@ -4,7 +4,7 @@
   "homepage": "http://butchi.github.io/SushifyJS/",
   "author": "IWABUCHI Yu(u)ki <k38647@gmail.com> (http://butchi.jp/)",
   "license": "BSD-2-Clause",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "node": ">=0.8.0"
   },
@@ -20,7 +20,7 @@
   },
   "main": "tools/node.js",
   "bin": {
-    "uglifyjs": "bin/uglifyjs"
+    "sushifyjs": "bin/sushifyjs"
   },
   "files": [
     "bin",
