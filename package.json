@@ -1,26 +1,26 @@
 {
-  "name": "sushify-js",
-  "description": "JavaScript parser, sushi-mangler/compressor and beautifier toolkit",
-  "homepage": "http://butchi.github.io/SushifyJS/",
-  "author": "IWABUCHI Yu(u)ki <k38647@gmail.com> (http://butchi.jp/)",
+  "name": "jojofy-js",
+  "description": "JavaScript parser, jojo-mangler/compressor and beautifier toolkit",
+  "homepage": "https://github.com/khit9/JojofyJS",
+  "author": "khit <khit99@gmail.com>",
   "license": "BSD-2-Clause",
   "version": "0.1.1",
   "engines": {
     "node": ">=0.8.0"
   },
   "maintainers": [
-    "IWABUCHI Yu(u)ki <k38647@gmail.com> (http://butchi.jp/)"
+    "khit <khit99@gmail.com>"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/butchi/SushifyJS.git"
+    "url": "https://github.com/khit9/JojofyJS.git"
   },
   "bugs": {
-    "url": "https://github.com/butchi/SushifyJS/issues"
+    "url": "https://github.com/khit9/JojofyJS/issues"
   },
   "main": "tools/node.js",
   "bin": {
-    "sushifyjs": "bin/sushifyjs"
+    "jojofyjs": "bin/jojofyjs"
   },
   "files": [
     "bin",

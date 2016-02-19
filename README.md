@@ -1,10 +1,5 @@
-SushifyJS
+JojoJS
 =========
-
-Online Compiler
----------------
-
-https://serene-scrubland-2735.herokuapp.com/
 
 Install
 -------
@@ -14,25 +9,25 @@ First make sure you have installed the latest version of [node.js](http://nodejs
 
 From NPM for use as a command line app:
 
-    npm install sushify-js -g
+    npm install jojofy-js -g
 
 From NPM for programmatic use:
 
-    npm install sushify-js
+    npm install jojofy-js
 
 From Git:
 
-    git clone git://github.com/butchi/SushifyJS.git
-    cd SushifyJS
+    git clone git://github.com/khit9/JojofyJS.git
+    cd JojofyJS
     npm link .
 
 Usage
 -----
 
-    sushifyjs [input files] [options]
+    jojofyjs [input files] [options]
 
-SushifyJS can take multiple input files.  It's recommended that you pass the
-input files first, then pass the options.  SushifyJS will parse input files
+JojofyJS can take multiple input files.  It's recommended that you pass the
+input files first, then pass the options.  JojofyJS will parse input files
 in sequence and apply any compression options.  The files are parsed in the
 same global scope, that is, a reference from a file to some
 variable/function declared in another file will be matched properly.
@@ -43,7 +38,7 @@ files.
 If you wish to pass your options before the input files, separate the two with
 a double dash to prevent input files being used as option arguments:
 
-    sushifyjs --compress --mangle -- input.js
+    jojofyjs --compress --mangle -- input.js
 
 The available options are:
 
