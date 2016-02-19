@@ -1,4 +1,4 @@
-JojoJS
+JojofyJS
 =========
 
 Install
