@@ -127,6 +127,11 @@ The available options are:
   --name-cache                  File to hold mangled names mappings
   --pure-funcs                  List of functions that can be safely removed if
                                 their return value is not used           [array]
+  --dio --world                 Add Dio Worl*d AA
+  --exactly                     Add Te**nce Da*by AA
+  --pol                         Add Jean Pie*re Polna**ff AA
+  --letitgo                     Add Jean Pie*re Polna**ff AA 2
+  --kimi                        Add Kaky*in AA
 ```
 
 Specify `--output` (`-o`) to declare the output file.  Otherwise the output

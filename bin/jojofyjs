@@ -74,6 +74,11 @@ You need to pass an argument to this option to specify the name that your module
     .describe("name-cache", "File to hold mangled names mappings")
     .describe("pure-funcs", "List of functions that can be safely removed if their return value is not used")
     .describe("dump-spidermonkey-ast", "Dump SpiderMonkey AST to stdout.")
+    .describe("dio", "Add Dio Worl*d AA")
+    .describe("pol", "Add Jean Pie*re Polna**ff AA")
+    .describe("letitgo", "Add Jean Pie*re Polna**ff AA")
+    .describe("kimi", "Add Kaky*uin AA")
+    .describe("exactly", "Add Te**nce Da*by AA")
 
     .alias("p", "prefix")
     .alias("o", "output")
@@ -86,6 +91,7 @@ You need to pass an argument to this option to specify the name that your module
     .alias("V", "version")
     .alias("e", "enclose")
     .alias("q", "quotes")
+    .alias("world", "dio")
 
     .string("source-map")
     .string("source-map-root")
@@ -127,6 +133,11 @@ You need to pass an argument to this option to specify the name that your module
     .boolean("keep-fnames")
     .boolean("mangle-props")
     .boolean("reserve-domprops")
+    .boolean("dio")
+    .boolean("pol")
+    .boolean("kimi")
+    .boolean("exactly")
+    .boolean("letitgo")
 
     .wrap(80)
 
@@ -470,11 +481,51 @@ async.eachLimit(files, 1, function (file, cb) {
             output += "\n//# sourceMappingURL=" + source_map_url;
         }
 
-        if (OUTPUT_FILE) {
-            fs.writeFileSync(OUTPUT_FILE, output, "utf8");
-        } else {
-            print(output);
+        if (SOURCE_MAP) {
+            fs.writeFileSync(ARGS.source_map, SOURCE_MAP, "utf8");
+            var source_map_url = ARGS.source_map_url || (
+                P_RELATIVE
+                    ? path.relative(path.dirname(OUTPUT_FILE), ARGS.source_map)
+                    : ARGS.source_map
+            );
+            output += "\n//# sourceMappingURL=" + source_map_url;
         }
+
+        var aa_path = null;
+        if (ARGS.dio) {
+          aa_path = "../../../misc/aa/dio.js";
+        }
+        if (ARGS.pol) {
+          aa_path = "../../../misc/aa/pol.js";
+        }
+        if (ARGS.kimi) {
+          aa_path = "../../../misc/aa/kimi.js";
+        }
+        if (ARGS.exactly) {
+          aa_path = "../../../misc/aa/exactly.js";
+        }
+        if (ARGS.letitgo) {
+          aa_path = "../../../misc/aa/letitgo.js";
+        }
+
+        if(aa_path){
+                fs.readFile(aa_path, "utf-8", function (err, aa) {
+                  output = aa + output;
+                  if (OUTPUT_FILE) {
+                      fs.writeFileSync(OUTPUT_FILE, output, "utf8");
+                  } else {
+                      print(output);
+                  }
+                });
+        }else{
+          if (OUTPUT_FILE) {
+              fs.writeFileSync(OUTPUT_FILE, output, "utf8");
+          } else {
+              print(output);
+          }
+        }
+
+
     }
 
     if (ARGS.stats) {
