@@ -493,19 +493,19 @@ async.eachLimit(files, 1, function (file, cb) {
 
         var aa_path = null;
         if (ARGS.dio) {
-          aa_path = "../../../misc/aa/dio.js";
+          aa_path = "../../../lib/aa/dio.js";
         }
         if (ARGS.pol) {
-          aa_path = "../../../misc/aa/pol.js";
+          aa_path = "../../../lib/aa/pol.js";
         }
         if (ARGS.kimi) {
-          aa_path = "../../../misc/aa/kimi.js";
+          aa_path = "../../../lib/aa/kimi.js";
         }
         if (ARGS.exactly) {
-          aa_path = "../../../misc/aa/exactly.js";
+          aa_path = "../../../lib/aa/exactly.js";
         }
         if (ARGS.letitgo) {
-          aa_path = "../../../misc/aa/letitgo.js";
+          aa_path = "../../../lib/aa/letitgo.js";
         }
 
         if(aa_path){
