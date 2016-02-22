@@ -2,6 +2,7 @@ var path = require("path");
 var fs = require("fs");
 
 var FILES = exports.FILES = [
+    "../lib/aa.js",
     "../lib/utils.js",
     "../lib/ast.js",
     "../lib/parse.js",

@@ -491,38 +491,27 @@ async.eachLimit(files, 1, function (file, cb) {
             output += "\n//# sourceMappingURL=" + source_map_url;
         }
 
-        var aa_path = null;
         if (ARGS.dio) {
-          aa_path = "../../../lib/aa/dio.js";
+          output = "/*" + UglifyJS.AA.dio + "*/\n" + output;
         }
         if (ARGS.pol) {
-          aa_path = "../../../lib/aa/pol.js";
+          output = "/*" + UglifyJS.AA.pol + "*/\n" + output;
         }
         if (ARGS.kimi) {
-          aa_path = "../../../lib/aa/kimi.js";
+          output = "/*" + UglifyJS.AA.kimi + "*/\n" + output;
         }
         if (ARGS.exactly) {
-          aa_path = "../../../lib/aa/exactly.js";
+          output = "/*" + UglifyJS.AA.exactly + "*/\n" + output;
         }
         if (ARGS.letitgo) {
-          aa_path = "../../../lib/aa/letitgo.js";
+          output = "/*" + UglifyJS.AA.letitgo + "*/\n" + output;
         }
 
-        if(aa_path){
-                fs.readFile(aa_path, "utf-8", function (err, aa) {
-                  output = aa + output;
-                  if (OUTPUT_FILE) {
-                      fs.writeFileSync(OUTPUT_FILE, output, "utf8");
-                  } else {
-                      print(output);
-                  }
-                });
-        }else{
-          if (OUTPUT_FILE) {
-              fs.writeFileSync(OUTPUT_FILE, output, "utf8");
-          } else {
-              print(output);
-          }
+
+        if (OUTPUT_FILE) {
+            fs.writeFileSync(OUTPUT_FILE, output, "utf8");
+        } else {
+            print(output);
         }
 
 
