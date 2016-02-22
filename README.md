@@ -168,5 +168,7 @@ _　 /　　　　　　　i´ , -‐'"￣"''‐-,, --　,,_,-‐´ -'i´　と�
 　　　　　　　　　　　　　　　　　　'´　＼　　／　　　 ./／　／_／ク
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ／-'´ _/
     */
-window.licker=window.licker||{};(function(WRRRRYYYYYYィ){"use strict";WRRRRYYYYYYィ.movieData={};
+window.licker=window.licker||{};(function(WRRRRYYYYYYィ){"use strict";WRRRRYYYYYYィ.movieData={};var ズキュウウウン;var ドォーン;var 貧弱貧弱ゥ;var オラオラオラオラオラオラァッ=9249535;$.ajax({url:"assets/data/fourier_arr_lq.json",type:"GET",success:ギャルルルル,error:function(WRRRRYYYYYYィ){alert("error")},xhr:function(){var WRRRRYYYYYYィ=$.ajaxSettings.xhr();WRRRRYYYYYYィ.addEventListener("progress",this.progress);return WRRRRYYYYYYィ},progress:function(WRRRRYYYYYYィ){var ズキュウウウン=WRRRRYYYYYYィ.loaded/オラオラオラオラオラオラァッ;$("#mask--front, #mask--back").css({translate:"0 "+ズキュウウウン*100+"px"});$("#wave--front, #wave--back").css({translate:"0 "+-ズキュウウウン*100+"px"})}});function ギャルルルル(オラオラオラオラオラオラァッ){$("#svg--loading").fadeOut(500);WRRRRYYYYYYィ.movieData=オラオラオラオラオラオラァッ;
 //....`
+
+You need to use editor with proportional font for AA header.
