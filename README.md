@@ -129,8 +129,8 @@ The available options are:
                                 their return value is not used           [array]
   --dio --world                 Add Dio World AA
   --exactly                     Add Telence Darby AA
-  --pol                         Add Jean Pierre Polnareff AA
-  --kimi                        Add Kakyoin AA
+  --silver                      Add Jean Pierre Polnareff AA
+  --green                       Add Kakyoin AA
 ```
 
 Specify `--output` (`-o`) to declare the output file.  Otherwise the output
