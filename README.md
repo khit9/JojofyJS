@@ -127,15 +127,16 @@ The available options are:
   --name-cache                  File to hold mangled names mappings
   --pure-funcs                  List of functions that can be safely removed if
                                 their return value is not used           [array]
-  --dio --world                 Add Dio Worl*d AA
-  --exactly                     Add Te**nce Da*by AA
-  --pol                         Add Jean Pie*re Polna**ff AA
-  --letitgo                     Add Jean Pie*re Polna**ff AA 2
-  --kimi                        Add Kaky*in AA
+  --dio --world                 Add Dio World AA
+  --exactly                     Add Telence Darby AA
+  --pol                         Add Jean Pierre Polnareff AA
+  --kimi                        Add Kakyoin AA
 ```
 
 Specify `--output` (`-o`) to declare the output file.  Otherwise the output
 goes to STDOUT.
+
+You need to open source with Japanese Proportional font editor (like Atom with MS PGothic) for AA header.
 
 Example
 -----
@@ -170,5 +171,3 @@ _　 /　　　　　　　i´ , -‐'"￣"''‐-,, --　,,_,-‐´ -'i´　と�
     */
 window.licker=window.licker||{};(function(WRRRRYYYYYYィ){"use strict";WRRRRYYYYYYィ.movieData={};var ズキュウウウン;var ドォーン;var 貧弱貧弱ゥ;var オラオラオラオラオラオラァッ=9249535;$.ajax({url:"assets/data/fourier_arr_lq.json",type:"GET",success:ギャルルルル,error:function(WRRRRYYYYYYィ){alert("error")},xhr:function(){var WRRRRYYYYYYィ=$.ajaxSettings.xhr();WRRRRYYYYYYィ.addEventListener("progress",this.progress);return WRRRRYYYYYYィ},progress:function(WRRRRYYYYYYィ){var ズキュウウウン=WRRRRYYYYYYィ.loaded/オラオラオラオラオラオラァッ;$("#mask--front, #mask--back").css({translate:"0 "+ズキュウウウン*100+"px"});$("#wave--front, #wave--back").css({translate:"0 "+-ズキュウウウン*100+"px"})}});function ギャルルルル(オラオラオラオラオラオラァッ){$("#svg--loading").fadeOut(500);WRRRRYYYYYYィ.movieData=オラオラオラオラオラオラァッ;
 //....`
-
-You need to use editor with proportional font for AA header.

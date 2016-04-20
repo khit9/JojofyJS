@@ -74,11 +74,10 @@ You need to pass an argument to this option to specify the name that your module
     .describe("name-cache", "File to hold mangled names mappings")
     .describe("pure-funcs", "List of functions that can be safely removed if their return value is not used")
     .describe("dump-spidermonkey-ast", "Dump SpiderMonkey AST to stdout.")
-    .describe("dio", "Add Dio Worl*d AA")
-    .describe("pol", "Add Jean Pie*re Polna**ff AA")
-    .describe("letitgo", "Add Jean Pie*re Polna**ff AA")
-    .describe("kimi", "Add Kaky*uin AA")
-    .describe("exactly", "Add Te**nce Da*by AA")
+    .describe("dio", "Add Dio World AA")
+    .describe("silver", "Add Jean Pierre Polnareff AA")
+    .describe("green", "Add Kakyouin AA")
+    .describe("exactly", "Add Telence Darby AA")
 
     .alias("p", "prefix")
     .alias("o", "output")
@@ -134,10 +133,9 @@ You need to pass an argument to this option to specify the name that your module
     .boolean("mangle-props")
     .boolean("reserve-domprops")
     .boolean("dio")
-    .boolean("pol")
-    .boolean("kimi")
+    .boolean("silver")
+    .boolean("green")
     .boolean("exactly")
-    .boolean("letitgo")
 
     .wrap(80)
 
@@ -494,17 +492,14 @@ async.eachLimit(files, 1, function (file, cb) {
         if (ARGS.dio) {
           output = "/*" + UglifyJS.AA.dio + "*/\n" + output;
         }
-        if (ARGS.pol) {
-          output = "/*" + UglifyJS.AA.pol + "*/\n" + output;
+        if (ARGS.silver) {
+          output = "/*" + UglifyJS.AA.silver + "*/\n" + output;
         }
-        if (ARGS.kimi) {
-          output = "/*" + UglifyJS.AA.kimi + "*/\n" + output;
+        if (ARGS.green) {
+          output = "/*" + UglifyJS.AA.green + "*/\n" + output;
         }
         if (ARGS.exactly) {
           output = "/*" + UglifyJS.AA.exactly + "*/\n" + output;
-        }
-        if (ARGS.letitgo) {
-          output = "/*" + UglifyJS.AA.letitgo + "*/\n" + output;
         }
 
 
